@@ -1,0 +1,76 @@
+<template>
+  
+  <article class="slds-card">
+    <div class="slds-card__header slds-grid">
+      <header class="slds-media slds-media_center slds-has-flexi-truncate">
+        <div class="slds-media__figure">
+          <span class="slds-icon_container slds-icon-standard-account" title="account">
+            <lightning-icon icon-name="standard:account"></lightning-icon>
+          </span>
+        </div>
+        <div class="slds-media__body">
+          <h2 class="slds-card__header-title">
+            <a class="slds-card__header-link slds-truncate">
+              <span>Userstory Summary</span>
+            </a>
+          </h2>
+        </div>
+      </header>
+    </div>
+    <div class="slds-card__body slds-card__body_inner">
+      <div class="slds-p-horizontal_medium">
+        <div class="slds-clearfix">
+          <div class="slds-p-around_medium">
+          <div class="slds-float_left">
+            <p>Number of Userstories :</p>
+          </div>
+            <div class="slds-float_right">
+              <p style="color:green">{total}</p>
+            </div>
+            </div>
+            <div class="slds-p-around_medium">
+            <div class="slds-float_left">
+                <p>Number of Userstories completed :</p>
+              </div>
+              <div class="slds-float_right">
+                <p class={colorcode}>{completedTotal}</p>
+              </div>
+              </div>
+              <!--<div class="slds-p-around_medium">
+                <div class="slds-float_left">
+                    <p>Userstories to move to next sprint :</p>
+                  </div>
+                  <div class="slds-float_right">
+                    <p>13</p>
+                  </div>
+                  </div>-->
+              <div class="slds-p-around_medium">
+              <div class="slds-float_left">
+                <p>Move to next sprint :</p>
+              </div>
+              <div class="slds-float_right">
+                <p class={colorcode}>{onholdTotal}</p>
+              </div>
+              </div>
+              <div class="slds-p-around_medium">
+                <div class="slds-float_left">
+                  <p>Userstories inprogress :</p>
+                </div>
+                <div class="slds-float_right">
+                  <p style="color:orange">{inProgressTotal}</p>
+                </div>
+                </div>
+                <div class="slds-p-around_medium">
+                  <div class="slds-float_left">
+                    <p>Userstories picked :</p>
+                  </div>
+                  <div class="slds-float_right">
+                    <p style="color:red">{pickedTotal}</p>
+                  </div>
+                  </div>
+              </div>
+              </div>
+    </div>
+    
+  </article>
+</template>

@@ -1,0 +1,32 @@
+.slds-p-left_small{
+    font-size: 15px;
+}
+.slds-float_right{
+    font-weight: bold;
+    font-size: 15px;
+}
+.slds-float_right:hover{
+    -ms-transform: scale(1.5); 
+  -webkit-transform: scale(1.5); 
+  transform: scale(1.5); 
+}
+.slds-float_left{
+    font-size: 15px;
+}
+.bg-color{
+    background: white;
+}
+
+.slds-card__header {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 12px;
+}
+.RED{
+    color: red;
+}
+.GREEN{
+    color:green;
+}
+.ORANGE{
+    color:orange;
+}
